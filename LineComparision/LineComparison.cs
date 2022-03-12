@@ -46,12 +46,26 @@ namespace LineComparision
             Console.WriteLine("Length of the line is : " + length2);
             Console.WriteLine("----------------------------------------------");
 
-            bool equalityCheck = length1.Equals(length2);
-            if (equalityCheck == true)
-                Console.WriteLine("Lengths of line 1 and line 2 are equal");
-            else
-                Console.WriteLine("Lengths of line 1 and line 2 are not equal");
+            //bool equalityCheck = length1.Equals(length2);
+            //if (equalityCheck == true)
+            //    Console.WriteLine("Lengths of line 1 and line 2 are equal");
+            //else
+            //    Console.WriteLine("Lengths of line 1 and line 2 are not equal");
 
+            //UC3-Comparing Lines
+            double diff = length1.CompareTo(length2);
+            if (diff < 0)
+            {
+                Console.WriteLine("Length of Line 1 is less than Line2");
+            }
+            if (diff > 0)
+            {
+                Console.WriteLine("Length of Line 1 is greater than Line2");
+            }
+            if (diff == 0)
+            {
+                Console.WriteLine("Length of Line 1 equal to Line2");
+            }
         }
     }
 }
