@@ -12,6 +12,7 @@ namespace LineComparision
         {
             LineComparison lineComparison = new LineComparison();
             lineComparison.calculateLength();
+            lineComparison.checkEquality();
             Console.ReadKey();
         }
     }
